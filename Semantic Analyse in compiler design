@@ -1,0 +1,18 @@
+mport queue
+from queue import LifoQueue
+import re
+
+class Variable:
+
+    def __init__(self, name, statementType, scope, value):
+        self.name = name
+        self.statementType = statementType
+        self.scope = scope
+        self.value = value
+    
+class Function:
+    def __init__(self, name, statementType, scope, pharameters):
+        self.name = name
+        self.statementType = statementType
+        self.scope = scope
+        self.pharameters = pharameters
